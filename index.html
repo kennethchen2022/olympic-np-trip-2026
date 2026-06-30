@@ -62,6 +62,10 @@
   ul.check li{margin:2px 0;padding-left:20px;position:relative;font-size:13px;}
   ul.check li::before{content:"\2610";position:absolute;left:0;color:var(--moss);font-weight:700;}
   ul.check li.must::before{content:"\2605";color:var(--red);}
+  .urlbox{display:block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;background:#eef4ea;
+       border:1px solid var(--line);border-radius:6px;padding:6px 8px;margin:4px 0 14px;word-break:break-all;color:#3a4a40;user-select:all;}
+  .routerow{margin:14px 0;}
+  .routerow .lbl{font-weight:700;color:var(--bark);display:block;margin-bottom:4px;}
   .day-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
   .miles{background:#eef4ea;border:1px solid var(--line);border-radius:8px;padding:3px 9px;font-size:12px;color:var(--green);font-weight:700;}
   @media print{nav.toc{display:none;} section{break-inside:avoid;box-shadow:none;} .maproute{color:#1e4d38;background:#fff;border:1px solid #1e4d38;}}
@@ -82,6 +86,7 @@
 
 <nav class="toc"><div class="wrap">
   <a href="#snapshot">📋 Snapshot</a>
+  <a href="#maps">🗺️ Routes</a>
   <a href="#reserve">⚠️ Reserve now</a>
   <a href="#charging">⚡ Charging</a>
   <a href="#day1">📅 Day 1</a>
@@ -102,6 +107,57 @@
     <tr><td><strong>Sun Jul 5</strong></td><td>Counter-clockwise coast return</td><td>🏠 Home</td><td>Forks · La Push · Hoh · Ruby Beach · Kalaloch · Quinault · Aberdeen charge → home ~8:30–9 pm</td></tr>
   </table>
   <div class="callout tip"><strong>Strategy:</strong> drive in via the <strong>south/Olympia + Hood Canal</strong> route (no ferry) and check in to your <strong>reserved site</strong> after noon. Day 2 uses the <strong>dawn or after-3 pm Hurricane Ridge window</strong> so you never need a timed-entry ticket. Day 3 returns down the coast through Aberdeen → Olympia — a clean <strong>no-ferry counterclockwise loop</strong>, charging aligned to kid breaks for <strong>zero range anxiety</strong>.</div>
+</section>
+
+<!-- ============ MAPS ============ -->
+<section id="maps">
+  <h2><span class="num">🗺️</span>Maps &amp; routes — plug &amp; play</h2>
+  <p class="small"><strong>Tap a button to open the full route in Google Maps</strong> (all stops + chargers pre-pinned), or copy the URL below it. Pin order is optimized; drop any stop you want to skip once it opens. <span class="small">Tip: open these the night before on the car screen and <strong>download offline maps</strong> — there's no cell signal in much of the park.</span></p>
+
+  <div class="routerow">
+    <span class="lbl">📅 Day 1 — Drive in (no ferry): Kirkland → Olympia → Hood Canal → Sequim ⚡ → Lake Crescent → Sol Duc</span>
+    <a class="maproute" href="https://www.google.com/maps/dir/Kirkland,+WA/Olympia,+WA/Shelton,+WA/Hoodsport,+WA/1441+E+Washington+St,+Sequim,+WA/Lake+Crescent+Lodge,+WA/Sol+Duc+Hot+Springs+Resort,+WA" target="_blank" rel="noopener">🗺️ Open Day 1 route</a>
+    <code class="urlbox">https://www.google.com/maps/dir/Kirkland,+WA/Olympia,+WA/Shelton,+WA/Hoodsport,+WA/1441+E+Washington+St,+Sequim,+WA/Lake+Crescent+Lodge,+WA/Sol+Duc+Hot+Springs+Resort,+WA</code>
+  </div>
+
+  <div class="routerow">
+    <span class="lbl">📅 Day 2 (normal) — Sol Duc → Hurricane Ridge → Lake Crescent → camp</span>
+    <a class="maproute" href="https://www.google.com/maps/dir/Sol+Duc+Hot+Springs+Resort,+WA/Hurricane+Ridge+Visitor+Center,+WA/Lake+Crescent+Lodge,+WA/Devils+Punchbowl,+Olympic+National+Park,+WA/Sol+Duc+Hot+Springs+Resort,+WA" target="_blank" rel="noopener">🗺️ Open Day 2 route</a>
+    <code class="urlbox">https://www.google.com/maps/dir/Sol+Duc+Hot+Springs+Resort,+WA/Hurricane+Ridge+Visitor+Center,+WA/Lake+Crescent+Lodge,+WA/Devils+Punchbowl,+Olympic+National+Park,+WA/Sol+Duc+Hot+Springs+Resort,+WA</code>
+  </div>
+
+  <div class="routerow">
+    <span class="lbl">📅 Day 2 · Plan A (early/dawn) — Sol Duc → Hurricane Ridge → Lake Crescent → Marymere Falls → camp</span>
+    <a class="maproute" href="https://www.google.com/maps/dir/Sol+Duc+Hot+Springs+Resort,+WA/Hurricane+Ridge+Visitor+Center,+WA/Lake+Crescent+Lodge,+WA/Marymere+Falls+Trailhead,+WA/Sol+Duc+Hot+Springs+Resort,+WA" target="_blank" rel="noopener">🗺️ Open Plan A route</a>
+    <code class="urlbox">https://www.google.com/maps/dir/Sol+Duc+Hot+Springs+Resort,+WA/Hurricane+Ridge+Visitor+Center,+WA/Lake+Crescent+Lodge,+WA/Marymere+Falls+Trailhead,+WA/Sol+Duc+Hot+Springs+Resort,+WA</code>
+  </div>
+
+  <div class="routerow">
+    <span class="lbl">📅 Day 2 · Plan B (late/after-3) — Sol Duc → Lake Crescent → Marymere Falls → Hurricane Ridge → camp</span>
+    <a class="maproute" href="https://www.google.com/maps/dir/Sol+Duc+Hot+Springs+Resort,+WA/Lake+Crescent+Lodge,+WA/Marymere+Falls+Trailhead,+WA/Hurricane+Ridge+Visitor+Center,+WA/Sol+Duc+Hot+Springs+Resort,+WA" target="_blank" rel="noopener">🗺️ Open Plan B route</a>
+    <code class="urlbox">https://www.google.com/maps/dir/Sol+Duc+Hot+Springs+Resort,+WA/Lake+Crescent+Lodge,+WA/Marymere+Falls+Trailhead,+WA/Hurricane+Ridge+Visitor+Center,+WA/Sol+Duc+Hot+Springs+Resort,+WA</code>
+  </div>
+
+  <div class="routerow">
+    <span class="lbl">📅 Day 3 (full coast home) — Sol Duc → Forks ⚡ → La Push → Hoh → Ruby Beach → Kalaloch → Quinault → Aberdeen ⚡ → Kirkland</span>
+    <a class="maproute" href="https://www.google.com/maps/dir/Sol+Duc+Hot+Springs+Resort,+WA/100+Fern+Hill+Rd,+Forks,+WA/First+Beach,+La+Push,+WA/Hoh+Rain+Forest+Visitor+Center,+WA/Ruby+Beach,+WA/Kalaloch+Lodge,+WA/Worlds+Largest+Sitka+Spruce,+Quinault,+WA/701+W+Wishkah+St,+Aberdeen,+WA/Kirkland,+WA" target="_blank" rel="noopener">🗺️ Open Day 3 route</a>
+    <code class="urlbox">https://www.google.com/maps/dir/Sol+Duc+Hot+Springs+Resort,+WA/100+Fern+Hill+Rd,+Forks,+WA/First+Beach,+La+Push,+WA/Hoh+Rain+Forest+Visitor+Center,+WA/Ruby+Beach,+WA/Kalaloch+Lodge,+WA/Worlds+Largest+Sitka+Spruce,+Quinault,+WA/701+W+Wishkah+St,+Aberdeen,+WA/Kirkland,+WA</code>
+  </div>
+
+  <div class="routerow">
+    <span class="lbl">📅 Day 3 · Hoh-first (beat the ~9 am line, no La Push) — Sol Duc → Forks ⚡ → Hoh → Ruby Beach → Kalaloch → Quinault → Aberdeen ⚡ → Kirkland</span>
+    <a class="maproute" href="https://www.google.com/maps/dir/Sol+Duc+Hot+Springs+Resort,+WA/100+Fern+Hill+Rd,+Forks,+WA/Hoh+Rain+Forest+Visitor+Center,+WA/Ruby+Beach,+WA/Kalaloch+Lodge,+WA/Worlds+Largest+Sitka+Spruce,+Quinault,+WA/701+W+Wishkah+St,+Aberdeen,+WA/Kirkland,+WA" target="_blank" rel="noopener">🗺️ Open Hoh-first route</a>
+    <code class="urlbox">https://www.google.com/maps/dir/Sol+Duc+Hot+Springs+Resort,+WA/100+Fern+Hill+Rd,+Forks,+WA/Hoh+Rain+Forest+Visitor+Center,+WA/Ruby+Beach,+WA/Kalaloch+Lodge,+WA/Worlds+Largest+Sitka+Spruce,+Quinault,+WA/701+W+Wishkah+St,+Aberdeen,+WA/Kirkland,+WA</code>
+  </div>
+
+  <h4>⚡ Supercharger quick-pins</h4>
+  <table>
+    <tr><th>Charger</th><th>Address</th><th>Open in Maps</th></tr>
+    <tr><td><strong>Sequim</strong> (Day 1 charge)</td><td>1441 E Washington St, Sequim, WA</td><td><a href="https://www.google.com/maps/search/?api=1&query=1441+E+Washington+St+Sequim+WA" target="_blank" rel="noopener">📍 pin</a></td></tr>
+    <tr><td><strong>Forks</strong> (Day 3 buffer)</td><td>100 Fern Hill Rd, Forks, WA</td><td><a href="https://www.google.com/maps/search/?api=1&query=100+Fern+Hill+Rd+Forks+WA" target="_blank" rel="noopener">📍 pin</a></td></tr>
+    <tr><td><strong>Aberdeen</strong> (Day 3 main)</td><td>701 W Wishkah St, Aberdeen, WA</td><td><a href="https://www.google.com/maps/search/?api=1&query=701+W+Wishkah+St+Aberdeen+WA" target="_blank" rel="noopener">📍 pin</a></td></tr>
+    <tr><td><strong>Olympia</strong> (in/out optional)</td><td>Olympia, WA (I-5)</td><td><a href="https://www.google.com/maps/search/?api=1&query=Tesla+Supercharger+Olympia+WA" target="_blank" rel="noopener">📍 pin</a></td></tr>
+  </table>
 </section>
 
 <!-- ============ RESERVE ============ -->
