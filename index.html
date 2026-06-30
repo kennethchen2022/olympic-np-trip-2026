@@ -54,6 +54,14 @@
   .small{font-size:12px;color:var(--muted);}
   .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
   @media(max-width:760px){.grid{grid-template-columns:1fr;}}
+  .packgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px 22px;}
+  @media(max-width:900px){.packgrid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:600px){.packgrid{grid-template-columns:1fr;}}
+  .pack h4{margin:6px 0 4px;border-bottom:1px solid var(--line);padding-bottom:3px;}
+  ul.check{list-style:none;padding-left:0;margin:5px 0 10px;}
+  ul.check li{margin:2px 0;padding-left:20px;position:relative;font-size:13px;}
+  ul.check li::before{content:"\2610";position:absolute;left:0;color:var(--moss);font-weight:700;}
+  ul.check li.must::before{content:"\2605";color:var(--red);}
   .day-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
   .miles{background:#eef4ea;border:1px solid var(--line);border-radius:8px;padding:3px 9px;font-size:12px;color:var(--green);font-weight:700;}
   @media print{nav.toc{display:none;} section{break-inside:avoid;box-shadow:none;} .maproute{color:#1e4d38;background:#fff;border:1px solid #1e4d38;}}
@@ -90,7 +98,7 @@
   <table>
     <tr><th>Day</th><th>Theme</th><th>Sleep</th><th>Key stops</th></tr>
     <tr><td><strong>Fri Jul 3</strong></td><td>Drive in + settle</td><td>Sol Duc Campground</td><td>I-5/Olympia · Hood Canal · Sequim charge · Sol Duc Falls · hot springs soak</td></tr>
-    <tr><td><strong>Sat Jul 4</strong></td><td>Alpine + lake</td><td>Sol Duc Campground</td><td>Hurricane Ridge (timed entry) · Lake Crescent swim · July 4 campfire</td></tr>
+    <tr><td><strong>Sat Jul 4</strong></td><td>Alpine + lake</td><td>Sol Duc Campground</td><td>Hurricane Ridge (dawn/after-3, no ticket) · Lake Crescent swim · July 4 campfire</td></tr>
     <tr><td><strong>Sun Jul 5</strong></td><td>Counter-clockwise coast return</td><td>🏠 Home</td><td>Forks · La Push · Hoh · Ruby Beach · Kalaloch · Quinault · Aberdeen charge → home ~8:30–9 pm</td></tr>
   </table>
   <div class="callout tip"><strong>Strategy:</strong> drive in via the <strong>south/Olympia + Hood Canal</strong> route (no ferry) and check in to your <strong>reserved site</strong> after noon. Day 2 uses the <strong>dawn or after-3 pm Hurricane Ridge window</strong> so you never need a timed-entry ticket. Day 3 returns down the coast through Aberdeen → Olympia — a clean <strong>no-ferry counterclockwise loop</strong>, charging aligned to kid breaks for <strong>zero range anxiety</strong>.</div>
@@ -286,30 +294,165 @@
 
 <!-- ============ PACK ============ -->
 <section id="pack">
-  <h2><span class="num">6</span>🎒 Camp &amp; packing notes</h2>
-  <div class="grid">
-  <div>
-  <h4>Camp essentials</h4>
-  <ul>
-    <li>Tent, sleeping bags/pads, headlamps, camp chairs, lantern</li>
-    <li>Layers + rain shells (coast + rainforest are wet/cool even in July)</li>
-    <li>Warm hats/gloves for Hurricane Ridge (30–40°F cooler up top)</li>
-    <li>Water shoes + towels for hot springs &amp; Lake Crescent swim</li>
-    <li>Bug spray (Sol Duc valley), sunscreen, first-aid kit</li>
-    <li>Bear-aware food storage — use the campsite locker; never food in the tent</li>
-  </ul>
+  <h2><span class="num">6</span>🎒 Camp packing checklist (don't miss anything)</h2>
+  <p class="small">Tailored to <strong>car camping at Sol Duc (2 nights), July 4 weekend, young kids + stroller, Tesla, hot springs + rainforest + coast + alpine</strong>. ★ = trip-specific "don't forget." Sol Duc sites have a <strong>picnic table, fire ring, and food locker</strong>; potable water is available but bring jugs.</p>
+
+  <div class="callout warn"><strong>★ The 10 most-forgotten for THIS trip:</strong> rain jackets <em>and</em> rain pants (Hoh rainforest + coast), warm hat/gloves + fleece (Hurricane Ridge is 30–40°F cooler), <strong>swimsuits + water shoes + towels</strong> (hot springs &amp; Lake Crescent), the <strong>child carrier</strong> (dirt trails), <strong>offline-downloaded maps</strong> (no cell signal), <strong>firewood + ice bought at Sequim</strong> (don't haul firewood across regions), <strong>motion-sickness meds</strong> (winding US-101 + Hurricane Ridge road), kids' Tylenol/Motrin, cash for the firewood/host, and your <strong>campsite reservation + park pass</strong>.</div>
+
+  <div class="pack packgrid">
+    <div>
+      <h4>🏕️ Shelter &amp; sleep</h4>
+      <ul class="check">
+        <li>Tent + rainfly + footprint/groundsheet</li>
+        <li>Stakes, guylines, mallet</li>
+        <li class="must">Sleeping bags rated ~30–40°F (nights are cool)</li>
+        <li>Sleeping pads / air mattress + pump</li>
+        <li>Pillows + extra blankets (kids get cold)</li>
+        <li>Tarp + paracord (rain canopy over the table)</li>
+        <li>Tent repair tape / patch kit</li>
+      </ul>
+    </div>
+    <div>
+      <h4>🍳 Camp kitchen</h4>
+      <ul class="check">
+        <li class="must">Camp stove + extra propane canisters</li>
+        <li>Lighter + waterproof matches</li>
+        <li>Pot, pan, cooking spoon, spatula, tongs</li>
+        <li>Sharp knife + cutting board</li>
+        <li>Plates, bowls, cups, mugs, cutlery</li>
+        <li class="must">Cooler + ice (buy ice at Sequim)</li>
+        <li>Water jugs (5–7 gal) + reusable bottles</li>
+        <li>Biodegradable dish soap, sponge, wash basin</li>
+        <li>Paper towels, foil, ziplocs, food containers</li>
+        <li>Trash + recycling bags, can/bottle opener</li>
+        <li>Coffee gear + filters</li>
+      </ul>
+    </div>
+    <div>
+      <h4>🔥 Fire &amp; light</h4>
+      <ul class="check">
+        <li class="must">Firewood (buy local at Sequim/Forks or from host)</li>
+        <li>Fire starter / kindling</li>
+        <li class="must">Headlamp per person + spare batteries</li>
+        <li>Lantern</li>
+        <li>Long-reach lighter</li>
+        <li class="must">Marshmallows + s'mores kit + roasting sticks</li>
+        <li>Glow sticks (July 4 — no fireworks in park)</li>
+      </ul>
+    </div>
+    <div>
+      <h4>🧥 Clothing &amp; layers</h4>
+      <ul class="check">
+        <li>Moisture-wicking base layers</li>
+        <li class="must">Fleece / insulating mid-layer</li>
+        <li class="must">Rain jacket + rain pants (rainforest!)</li>
+        <li class="must">Warm hat + gloves (Hurricane Ridge)</li>
+        <li>Sun hat + sunglasses</li>
+        <li>Hiking shoes / sturdy closed-toe shoes</li>
+        <li>Wool socks (extra pairs)</li>
+        <li>Pajamas + sleep socks</li>
+        <li>Lots of spare kid clothes (they get wet/muddy)</li>
+      </ul>
+    </div>
+    <div>
+      <h4>♨️ Hot springs &amp; water play</h4>
+      <ul class="check">
+        <li class="must">Swimsuits (hot springs + Lake Crescent)</li>
+        <li class="must">Water shoes / sandals</li>
+        <li>Quick-dry towels (one per person)</li>
+        <li>Dry bag for wet stuff</li>
+        <li>Goggles for kids</li>
+        <li>Hot-springs cash (~$19 adult / $15 kid per session)</li>
+      </ul>
+    </div>
+    <div>
+      <h4>👶 Kids</h4>
+      <ul class="check">
+        <li class="must">Child carrier (dirt trails) + stroller (paved)</li>
+        <li>Kid snacks + spill-proof cups</li>
+        <li>Diapers / wipes / changing pad (if needed)</li>
+        <li>Comfort item / stuffed animal</li>
+        <li>Kid headlamp + camp chair</li>
+        <li>Downloaded shows / audiobooks for the car</li>
+        <li>Kids' meds (Tylenol/Motrin), sunscreen, hats</li>
+        <li>Potty/training items if applicable</li>
+      </ul>
+    </div>
+    <div>
+      <h4>🩹 First aid &amp; safety</h4>
+      <ul class="check">
+        <li class="must">First-aid kit + any prescriptions</li>
+        <li>Kids' + adult pain reliever, allergy/Benadryl</li>
+        <li class="must">Motion-sickness meds (winding roads)</li>
+        <li>Tweezers (splinters/ticks), blister care</li>
+        <li class="must">Bug spray (DEET/picaridin) — Sol Duc valley</li>
+        <li>Sunscreen + SPF lip balm</li>
+        <li>Hand sanitizer, thermometer, after-bite</li>
+        <li>Multi-tool, duct tape, emergency whistle</li>
+      </ul>
+    </div>
+    <div>
+      <h4>🧴 Toiletries &amp; hygiene</h4>
+      <ul class="check">
+        <li>Toothbrushes + toothpaste</li>
+        <li>Biodegradable soap / shampoo</li>
+        <li class="must">Extra toilet paper + wet wipes</li>
+        <li>Deodorant, hairbrush, feminine products</li>
+        <li>Glasses / contacts + supplies</li>
+        <li>Small camp towel, washcloths</li>
+        <li>Quick-dry pack towel</li>
+      </ul>
+    </div>
+    <div>
+      <h4>🗺️ Docs, nav &amp; EV</h4>
+      <ul class="check">
+        <li class="must">Campsite reservation confirmation</li>
+        <li class="must">Park pass (America the Beautiful or $30 receipt)</li>
+        <li class="must">Offline-downloaded Google Maps (no signal)</li>
+        <li>Printed copy of this plan + paper park map</li>
+        <li>Phone + power bank + car/USB cables</li>
+        <li>Tesla mobile connector (trickle from any outlet)</li>
+        <li>ID, insurance card, cash (firewood/host/vendors)</li>
+        <li>Tire repair kit / inflator</li>
+      </ul>
+    </div>
+    <div>
+      <h4>🎒 Day-pack (hikes &amp; stops)</h4>
+      <ul class="check">
+        <li>Backpack + reusable water bottles</li>
+        <li>Trail snacks + picnic supplies</li>
+        <li>Rain shells + a warm layer (always)</li>
+        <li>Binoculars (marmots/deer at Hurricane Ridge!)</li>
+        <li>Camera, sunglasses, sunscreen</li>
+        <li>Small first-aid + hand sanitizer</li>
+        <li>Picnic blanket (Lake Crescent, Kalaloch)</li>
+      </ul>
+    </div>
+    <div>
+      <h4>🍫 Food &amp; drink <span class="small">(stock at Sequim)</span></h4>
+      <ul class="check">
+        <li>2 dinners + 2 breakfasts + 3 lunches</li>
+        <li>Lots of kid snacks (limited food past Forks Day 3)</li>
+        <li>Coffee/tea, electrolyte drinks, water</li>
+        <li>Cooking oil, salt/pepper, condiments</li>
+        <li>S'mores ingredients + hot-dog fixings</li>
+        <li class="must">Day-3 cooler lunch (few options on the coast)</li>
+      </ul>
+    </div>
+    <div>
+      <h4>🪑 Camp comfort</h4>
+      <ul class="check">
+        <li>Camp chairs + folding table (site has a picnic table)</li>
+        <li>Clothesline + clips (dry wet swimsuits/towels)</li>
+        <li>Cards / travel games / books</li>
+        <li>Hammock, star-chart app (stargazing)</li>
+        <li>Broom/dustpan, rags for muddy kids</li>
+        <li>Umbrella, sunshade</li>
+      </ul>
+    </div>
   </div>
-  <div>
-  <h4>Kid + EV notes</h4>
-  <ul>
-    <li>Child carrier for dirt trails (Sol Duc Falls, Hoh); stroller for paved stops</li>
-    <li>Cooler with kid snacks — limited food past Forks on Day 3</li>
-    <li>Download offline Google Maps — <strong>no cell signal</strong> in much of the park</li>
-    <li>Charge to 100% at Sequim Day 1; treat Forks as your in-park safety net</li>
-    <li>Marshmallows + glow sticks for the July 4 campfire (no fireworks in park)</li>
-  </ul>
-  </div>
-  </div>
+
+  <div class="callout tip"><strong>🐻 Bear-aware (required at Sol Duc):</strong> store <strong>all food, coolers, trash, and scented items</strong> (toiletries, sunscreen, wipes) in the campsite <strong>food locker</strong> or the car — <strong>never in the tent</strong>. Wipe down the picnic table and pack out trash. <strong>Buy-local note:</strong> grab groceries, ice, and firewood at <strong>Sequim</strong> on the way in (don't transport firewood between regions — it spreads pests); the <strong>Forks</strong> stop on Day 3 is your last real food before the coast.</div>
   <div class="callout"><span class="small">Plan generated Jun 30, 2026. Verify Hurricane Ridge timed-entry windows, Sol Duc check-in time, US-101/Hood Canal road conditions, and Supercharger status before you go — summer conditions change.</span></div>
 </section>
 
